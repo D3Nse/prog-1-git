@@ -1,0 +1,355 @@
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container
+{
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    
+    padding: 0px 0px;
+}   
+
+.navigation
+{
+    display: flex;
+    height: 75px;
+    border: 1px solid black;
+}
+
+.logo
+{
+    float: left;
+    width: 50%;
+}
+
+.right_side
+{
+    width: 50%;
+    
+    align-items: stretch;
+}
+
+.searchBar
+{
+    border: 1px solid black;
+    width: 200px;
+    height: 25px;
+    float: right;
+    margin: 5px 25px 0 0 ;
+    display: flex;
+}
+
+.searchBar p
+{
+    width: 85%;
+} 
+
+.imgMagnifier
+{
+   margin: 2px 0px;
+}
+
+.header_buttons
+{
+    display: flex;
+    clear: both;
+}
+
+.right_side p
+{
+    margin: 0 0;
+}
+
+.home, .about, .contacts
+{
+    display: flex;
+    font-size: 25px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.header
+{
+    color: white;
+    border: 1px solid black;
+    height: 400px;
+    background-image: url(https://images.pexels.com/photos/2127012/pexels-photo-2127012.jpeg?cs=srgb&dl=pexels-maria-geller-2127012.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: 0px 50%;
+    
+}
+
+.header_content_right
+{
+    width: 50%;
+    margin: 100px 50px;
+    /* background-color: #a6a8adb2; */
+
+}
+
+.moreBtn
+{
+    border: 1px solid #D79B00;
+    background-color: #FFE6CC;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+
+.applyBtn
+{
+    border: 1px solid #6C8EBF;
+    background-color: #DAE8FC;
+    width: 100px;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+
+.content_info
+{
+    height: 600px;
+    border: 1px solid black;
+}
+
+.content_info_images
+{
+    display: flex;
+}
+
+.content_info_images_1, .content_info_images_2, .content_info_images_3
+{
+    width: 33%;
+    height: 600px;
+    margin-left: 1.5%;
+}
+
+.img1, .img2, .img3
+{
+    width: 98%;
+    border: 1px solid black;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.img1
+{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2024-bmw-xm-label-red-exterior-110-6435a6868dbfc.jpg?crop=0.681xw:0.765xh;0.137xw,0.215xh&resize=768:*);
+    background-size: cover;
+}
+
+.img2
+{
+    background: url(https://i.ytimg.com/vi/PaPxhgd6M-o/maxresdefault.jpg);
+    background-size: cover  ;
+}
+
+.img3
+{
+    background: url(https://www.bmw.nl/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-gallery-impressions-m3-competition-02_890.jpg);
+    background-size: cover;
+}
+
+.advertisement
+{
+    background-color: #F3F100;
+    border: 1px solid black;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.p1
+{
+    float: right;
+}
+
+.ad_Content
+{
+    height: 100%;
+}
+
+
+
+.adBtn
+{
+    width: 400px;
+    height: 50px;
+}
+
+.btn1
+{
+    border: 1px solid #D79B00;
+    background-color: #FFE6CC;
+}
+
+.btn2
+{
+    border: 1px solid #6C8EBF;
+    background-color: #DAE8FC;
+}
+
+
+.slider_area
+{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    height: 600px;
+    background: url(https://images.wallpaperscraft.ru/image/single/bmw_mashina_sportivnyj_139454_1920x1080.jpg);
+    background-size: cover;
+    
+}
+
+
+.dots
+{
+    position: relative;
+    top: 90%;
+    left: 50%;
+}
+
+.dot 
+{
+    height: 18px;
+    width: 18px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+
+@keyframes colorFade1 
+{
+    from 
+    {
+        background-color: #FFE6CC;
+    }
+    to 
+    {
+        background-color: rgb(69, 69, 69);
+    }
+}
+
+@keyframes colorFade2
+{
+    from 
+    {
+        background-color: #bbb;
+    }
+    to 
+    {
+        background-color: #7a7878;
+    }
+}
+
+@keyframes colorFade
+{
+    from 
+    {
+        background-color: #DAE8FC;
+    }
+    to 
+    {
+        background-color: #63686f;
+    }
+} 
+
+.btn1:hover
+{
+    animation: btnFade 0.2s ease-out forwards;
+    cursor: pointer;
+}
+
+.btn2:hover
+{
+    animation: colorFade2 0.2s ease-out forwards;
+    cursor: pointer;
+}
+
+.dot:hover
+{
+    animation: colorFade 0.2s ease-out forwards;
+    cursor: pointer;
+}
+
+
+.heading
+{
+    
+    border: 1px solid black;
+    height: 550px;
+}
+
+.heading_content
+{
+    margin: 0px 50px;
+}
+
+.table_bmw_series
+{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table_bmw_series td
+{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.footer
+{
+    background-color:#FFF2CC;
+    border: 1px solid black;
+    height: 200px;
+}
+
+.footer_firstRow
+{
+    display: flex;
+}
+
+.footer_logo
+{
+    width: 25%;
+}
+
+.footer_contacts
+{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+.footer_links
+{
+    width: 25%;
+}
+
+.footer_links_text
+{
+    position: relative;
+    top: 35px;
+}
+
+.Author
+{
+    height: 50px;
+    text-align: center;
+    background-color: #FFE6CC;
+    border: 1px solid black;
+}
+
+.footer_links p
+{
+    margin: 0px;
+}
