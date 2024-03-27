@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 Uzd</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -37,6 +37,8 @@
             </div>
         </div>
 
+        
+
         <div class="header">
             <div class="header_content_right">
                 <h1>NEW M4 BMW CAR</h1>
@@ -45,12 +47,18 @@
                 </p>
             
                 <div class="header_buttons">
-                    <button class="moreBtn">Lasit Vairak</button>
-                    <button class="applyBtn">Pieteikties</button>
+                    <button class="moreBtn" onclick="toggleVisiblePart()">Lasit Vairak</button>
+                    <button class="applyBtn" onclick="btnIzmeiginat()">Pieteikties</button>
                 </div>
             </div>
         </div>
             
+        <div id="hiddenDiv">
+
+            <p class="m4hiddenText">
+                De BMW M4 Coupé 2020 modellen bieden een fascinerende combinatie van elegantie, karakter en M typerende sportiviteit. De kenmerkende uitstraling van het BMW M4 Competition Coupé model zorgt voor een indrukwekkende autosportwaardige uitstraling. Niet alleen de uitstraling zorgt voor deze autosportwaardige beleving maar ook machtige motor van 510 pk en 650 Nm koppel geeft u een echte sportauto ervaring op de weg of op het circuit. 
+            </p>
+        </div>
 
         <div class="content_info">
             <div class="content_info_images">
@@ -83,19 +91,32 @@
             <img src="https://www.autoscout24.nl/cms-content-assets/2dYEOsD5iTOqrP4K7vU9VD-94ef50dbc5c096025cc0ace0b942812b-AS24_LOGO_gelb-1100.jpg" alt="" width="250px">
             <div class="ad_Content">
                 <h1>CAR RENTAL</h1>
-                <button class="adBtn btn1">Pirkts</button>
-                <button class="adBtn btn2">Izmeiginat</button>
+                <button class="adBtn btn1" onclick="btnPrikt()">Pirkts</button>
+                <button class="adBtn btn2" onclick="btnIzmeiginat()">Izmeiginat</button>
             </div>
         </div>
+
+
 
         <div class="slider_area">
+            <div class="slide_image_area">
+                <img class="slider_img" src="https://images.wallpaperscraft.ru/image/single/bmw_mashina_sportivnyj_139454_1920x1080.jpg" alt="" width="100%">
+                <img class="slider_img" src="https://kolesa-uploads.ru/-/c9b31be3-4df5-4644-97de-44c82eb2ec57/bmw-3-series-lci-front2-mini.jpg" alt="" width="100%" style="display: none;">
+                <img class="slider_img" src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/bmw-individual/2023/bmw-individual-mg-01-02.jpg" alt="" width="100%" style="display: none;">
+            </div>
+            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+
+            <a class="next" onclick="plusSlide(1)">&#10095;</a>
 
             <div class="dots">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+
+
+
         
         <div class="heading">
             <div class="heading_content">

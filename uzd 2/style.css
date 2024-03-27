@@ -8,7 +8,6 @@ body
     margin: 0 auto;
     width: 50%;
     border: 1px solid black;
-    
     padding: 0px 0px;
 }   
 
@@ -69,7 +68,6 @@ body
     font-size: 25px;
     width: 30%;
     position: relative;
-    
 }
 
 .header
@@ -80,16 +78,13 @@ body
     background-image: url(https://images.pexels.com/photos/2127012/pexels-photo-2127012.jpeg?cs=srgb&dl=pexels-maria-geller-2127012.jpg&fm=jpg);
     background-repeat: no-repeat;
     background-size: 1600px;
-    background-position: 0px 50%;
-    
+    background-position: 0px 50%; 
 }
 
 .header_content_right
 {
     width: 50%;
     margin: 100px 50px;
-    /* background-color: #a6a8adb2; */
-
 }
 
 .moreBtn
@@ -100,6 +95,7 @@ body
     margin-right: 10px;
     border-radius: 5px;
     padding: 3px 0px;
+    cursor: pointer;
 }
 
 .applyBtn
@@ -109,6 +105,32 @@ body
     width: 100px;
     border-radius: 5px;
     padding: 3px 0px;
+    cursor: pointer;
+}
+
+#hiddenDiv
+{
+    height: 300px;
+    background-image: url("https://www.bmw.in/content/dam/bmw/common/all-models/m-series/m4-coupe/2020/highlights/bmw-4-series-coupe-m-automobiles-sd-individual-01.jpg");
+    background-size: cover;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-out;
+}
+
+.m4hiddenText
+{
+    background-color: #7368689c;
+    margin: 25px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(240, 230, 87);
+}
+
+.hiddenImg
+{
+    overflow: hidden;
 }
 
 .content_info
@@ -161,7 +183,6 @@ body
     border: 1px solid black;
     height: 400px;
     text-align: center;
-    
 }
 
 .p1
@@ -173,8 +194,6 @@ body
 {
     height: 100%;
 }
-
-
 
 .adBtn
 {
@@ -194,22 +213,62 @@ body
     background-color: #DAE8FC;
 }
 
-
 .slider_area
 {
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
     border: 1px solid black;
+    position: relative;
     height: 600px;
-    background: url(https://images.wallpaperscraft.ru/image/single/bmw_mashina_sportivnyj_139454_1920x1080.jpg);
-    background-size: cover;
-    
+    overflow: hidden;
 }
 
+.slider_img
+{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.slide_image_area
+{
+    height:550px ;
+}
+
+.slider_img
+{
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+    background-color: rgba(197, 197, 197, 0.8);
+}
 
 .dots
 {
     position: relative;
-    top: 90%;
     left: 50%;
 }
 
@@ -221,9 +280,7 @@ body
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    
 }
-
 
 @keyframes colorFade1 
 {
@@ -278,7 +335,6 @@ body
     animation: colorFade 0.2s ease-out forwards;
     cursor: pointer;
 }
-
 
 .heading
 {
